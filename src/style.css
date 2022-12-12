@@ -1,7 +1,68 @@
-.tabContent {
-    background-color: brown;
+html, body, #content {
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 19.5%;
+    z-index: 100;
+    background-color: rgba( 0, 0, 0, 0.7);
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 body {
-    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.backgroundHome {
+    display: flex;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../src/images/70531218_p0.png);
+    background-size: cover;
+    z-index: 50;
+}
+
+.paragraphContainer {
+    z-index: 51;
+    position: absolute;
+    background-color: rgba( 0, 0, 0, 0.7);
+    width: 75vw;
+    font-size: large;
+    text-justify: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
 }

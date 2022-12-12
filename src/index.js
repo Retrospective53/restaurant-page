@@ -1,51 +1,42 @@
 import './style.css';
+import koishi from '../src/images/70531218_p0.png';
 
-alert('Ayy Lmao');
 console.log('asdasda');
 
-// selector
 const body = document.querySelector('body');
+const content = document.getElementById('content');
 
-const title = document.createElement('h1');
-title.textContent = 'Restaurant Menu';
-const content = document.createElement('div');
-const tab1 = document.createElement('h2');
-tab1.textContent = 'Home';
-const tab2 = document.createElement('h2');
-tab2.textContent = 'Menu';
-const tab3 = document.createElement('h2');
-tab3.textContent = 'About';
-const text1 = document.createElement('p');
-text1.textContent = 'asdasdasdsa';
-const text2 = document.createElement('p');
-text2.textContent = 'hahahahahaha';
-const text3 = document.createElement('p');
-text2.textContent = 'lololololololol';
+// Header
+const header = document.createElement('div');
+header.classList.add('header');
+// header.textContent = 'Header';
 
-tab1.classList.add('tabContent');
-tab2.classList.add('tabContent');
-tab3.classList.add('tabContent');
+const headerButtons = document.createElement('ul');
+const headerHomeButton = document.createElement('li');
+headerHomeButton.textContent = 'Home';
+const headerMenuButton = document.createElement('li');
+headerMenuButton.textContent = 'Menu';
+const headerAboutButton = document.createElement('li');
+headerAboutButton.textContent = 'About';
+
+headerButtons.appendChild(headerHomeButton);
+headerButtons.appendChild(headerMenuButton);
+headerButtons.appendChild(headerAboutButton);
+header.appendChild(headerButtons);
+
+content.appendChild(header);
 
 
-// get all elements with class tabcontent and hide them
-function openPage() {
+// home
+const backgroundHome = document.createElement('img');
+backgroundHome.id="backgroundHome";
+backgroundHome.src = koishi;
+content.appendChild(backgroundHome); 
 
-    const tabContent = document.getElementsByClassName('tabContent');
-    for (let i = 0; i < tabContent.length ; i++) {
-        tabContent[i].style.display = 'none';
-    }
-}
+const paragraphContainer = document.createElement('div');
+paragraphContainer.classList.add('paragraphContainer')
+const paragraph = document.createElement('p');
+paragraph.textContent = "Sip into something extraordinary with our delicious, hand-crafted blends of tea! Made with only the finest ingredients and steeped to perfection, our tea will awaken your senses and transport you to a world of unmatched flavor and aroma. Whether you prefer traditional black tea, or something more exotic like green tea or herbal tea, we have something for every palate. So why not treat yourself to a cup of our tasty tea today? You deserve it!"
 
-openPage();
-
-body.appendChild(title);
-body.appendChild(content);
-content.appendChild(tab1);
-content.appendChild(tab2);
-content.appendChild(tab3);
-
-tab1.appendChild(text1);
-tab2.appendChild(text2);
-tab3.appendChild(text3);
-
-// const tabbed = 
+paragraphContainer.appendChild(paragraph);
+content.appendChild(paragraphContainer);
