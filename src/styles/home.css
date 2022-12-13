@@ -22,20 +22,13 @@ body {
     position: relative;
 }
 
-.tabContentHome {
+#home {
     height: 100%;
     width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    vertical-align: middle;
 }
 
-.backgroundHome {
+#backgroundHome {
     display: flex;
     position: absolute;
     top:0px;
@@ -54,7 +47,9 @@ body {
     width: 75vw;
     font-size: large;
     text-justify: auto;
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
