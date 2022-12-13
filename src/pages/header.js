@@ -38,6 +38,9 @@ const headerLoad = function() {
     headerMenuButton.dataset.tabTarget = '#menu';
     headerAboutButton.dataset.tabTarget = '#about';
 
+    headerHomeButton.classList.add('active');
+
+
     const tabs = document.querySelectorAll('[data-tab-target');
 
     tabs.forEach(tab => {
