@@ -22,6 +22,11 @@ const menuLoad = function() {
     const menu3 = document.createElement('li');
     const menu4 = document.createElement('li');
 
+    menu1.textContent = 'Chamomile Tea'
+    menu2.textContent = 'Earlgrey Tea'
+    menu3.textContent = 'Whatever Tea'
+    menu4.textContent = "Human's blood + Tea"
+
     menuContainer.id = 'menuContainer';
     menuList.className = 'menuList';
     menu1.className = 'menus';

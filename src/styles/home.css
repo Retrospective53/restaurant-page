@@ -41,15 +41,20 @@ body {
 }
 
 .paragraphContainer {
+    font-family: 'Bad Script', cursive;
     z-index: 51;
     position: absolute;
-    background-color: rgba( 0, 0, 0, 0.7);
+    /* background-color: rgba( 0, 0, 0, 0.7); */
+    text-shadow: 3px 3px 3px black;
     width: 75vw;
-    font-size: large;
-    text-justify: auto;
+    font-size: 1.8em;
+    text-justify: inter-word;
+
     left: 50%;
-    top: 50%;
+    top: 60%;
     margin: 0;
+    padding: 2%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
