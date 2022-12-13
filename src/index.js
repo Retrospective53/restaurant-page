@@ -1,11 +1,13 @@
 import header from './pages/header'
 import home from './pages/home'
 import menu from './pages/menu'
+import about from './pages/about'
 import '../src/styles/index.css'
 
 header();
 home();
 menu();
+about();
 
 // const tabContent = document.getElementsByClassName('tabContent');
 // for (let i = 0; i < tabContent.length; i++) {
