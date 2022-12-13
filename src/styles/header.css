@@ -1,0 +1,44 @@
+html, body, #content {
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 19.5%;
+    z-index: 100;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+li {
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.6);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover {
+    cursor: pointer;
+    color: black;
+    background-color: bisque;
+}
